@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fe499f66d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>COVID Tracker APP | Profit With JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <p class="project-name"><strong>COVID 19</strong></p>
+      <p class="global-tracker">OFFICIAL WORLDWIDE TRACKER</p>
+      <div class="search">
+        <input
+          id="search-country"
+          type="text"
+          placeholder="Search for country"
+          onkeyup="onEnter(event)"
+        />
+        <i
+          id="search-icon"
+          class="fas fa-search-location"
+          onclick="getCountryData()"
+        ></i>
+      </div>
+      <p class="update-time">MAY 7TH 2020 15:13 GMT</p>
+      <p class="last-update"><strong>LAST UPDATE:</strong></p>
+    </div>
+    <!--------------MAP----------------->
+    <div class="map-info">
+      <div id="map"></div>
+      <div class="country-stats">
+        <h3 id="country"></h3>
+        <div id="flag"></div>
+        <div id="today-country-cases"></div>
+        <div id="today-country-deaths"></div>
+        <div id="active-cases"></div>
+      </div>
+    </div>
+    <!--------------MAP----------------->
+    <div class="data-info">
+      <div class="news-channel">
+        <p class="news-title"><strong>CORONAVIRUS GLOBAL NEWS</strong></p>
+      </div>
+    </div>
+    <div id="footer">
+      <p class="team-name"><strong>TEAM DOMinators</strong></p>
+      <p class="pwj">PROFIT WITH JAVASCRIPT</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
