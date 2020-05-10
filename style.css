@@ -65,7 +65,20 @@ body {
 
 .data-info {
   background-color: rgb(213, 213, 213);
-  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#table-data {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.country-data {
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .news-title {
@@ -96,7 +109,7 @@ body {
   font-size: 12px;
   margin: 5px;
   margin-right: 10px;
-  padding-top: 10px;
+  padding-top: 8px;
   font-family: sans-serif;
   float: right;
 }
@@ -128,4 +141,32 @@ body {
   font-size: 20px;
   color: white;
   margin-left: 10px;
+}
+
+.info-flag img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.info-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.info-container {
+  witdh: 150px;
+}
+
+.info-flag {
+  height: 80px;
+  width: 100%;
+  background-size: cover;
 }
